@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Nguimeya Tematio Gaël-Pacôme - Personal Website</title>
+    <meta name="description" content="Personal website of Dr. Nguimeya Tematio Gaël-Pacôme - Publications, Research, and Academic Portfolio">
+    <meta name="keywords" content="academic, research, publications, computational physics, quantum computing">
+    <meta name="author" content="Dr. Nguimeya Tematio Gaël-Pacôme">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nguimeyatematio.github.io/">
+    <meta property="og:title" content="Dr. Nguimeya Tematio Gaël-Pacôme - Personal Website">
+    <meta property="og:description" content="Personal website showcasing research, publications, and academic portfolio">
+    <meta property="og:image" content="https://nguimeyatematio.github.io/assets/images/preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nguimeyatematio.github.io/">
+    <meta property="twitter:title" content="Dr. Nguimeya Tematio Gaël-Pacôme - Personal Website">
+    <meta property="twitter:description" content="Personal website showcasing research, publications, and academic portfolio">
+    <meta property="twitter:image" content="https://nguimeyatematio.github.io/assets/images/preview.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/themes.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Dr. Nguimeya Tematio Gaël-Pacôme",
+            "jobTitle": "PhD in Computational Condensed Matter and Materials Physics",
+            "affiliation": "University of Cape Town (UCT)",
+            "url": "https://nguimeyatematio.github.io",
+            "sameAs": [
+                "https://scholar.google.com/citations?user=yourID",
+                "https://github.com/pacomenguimeya",
+                "https://x.com/pacomenguimeya",
+                "https://www.linkedin.com/in/pacomenguimeya"
+            ]
+        }
+    </script>
+    <!-- Add EmailJS library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <!-- EmailJS Configuration -->
+    <script>
+        window.emailjsConfig = {
+            publicKey: 'hHedBdOSlpw7yqg9H',
+            serviceId: 'service_7u5uiq9',
+            templateId: 'template_73w8exm',
+            toEmail: 'pacome.nguimeya@aims-cameroon.org'
+        };
+    </script>
+</head>
+<body class="theme-light">
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home" class="brand-link" style="font-size:20px;">Dr. Nguimeya Tematio Gaël-Pacôme</a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#publications" class="nav-link" data-section="publications">Publications</a>
+                <a href="#talks" class="nav-link" data-section="talks">Talks</a>
+                <a href="#teaching" class="nav-link" data-section="teaching">Teaching</a>
+                <a href="#tutorials" class="nav-link" data-section="tutorials">Tutorials</a>
+                <a href="#blog" class="nav-link" data-section="blog">Blog</a>
+                <a href="#cv" class="nav-link" data-section="cv">CV</a>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="search-toggle" id="searchToggle" aria-label="Toggle search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search publications and blog posts...">
+            <button class="search-close" id="searchClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active" data-bg="assets/images/bg-home.jpg">
+            <!-- Floating gradient bubbles -->
+            <div class="bubble tr" aria-hidden="true"></div>
+            <div class="bubble bl" aria-hidden="true"></div>
+            <div class="container">
+                <div class="home-content">
+                    <div class="home-left">
+                        <div class="profile-image">
+                            <img src="assets/images/profile.jpg" alt="Dr. Nguimeya Tematio Gaël-Pacôme" loading="lazy">
+                        </div>
+                        <div class="profile-info">
+                            <h1 style="font-size: 20px;">Dr. Nguimeya Tematio Gaël-Pacôme</h1>
+                            <p class="title" style="font-size: 18px;">PhD in Computational Condensed Matter and Materials Physics</p>
+                            <p class="affiliation">University of Cape Town (UCT)</p>
+                            <div class="social-links">
+                                <a href="mailto:pacome.nguimeya@aims-cameroon.org" aria-label="Email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="https://scholar.google.com" target="_blank" aria-label="Google Scholar">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </a>
+                                <a href="https://github.com/pacomenguimeya" target="_blank" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://x.com/pacomenguimeya" target="_blank" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/pacomenguimeya" target="_blank" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-right">
+                        <div class="intro-text">
+                            <h2>🏠 Welcome to my homepage</h2>
+                            <p style="text-align: justify;">I am a researcher in Computational Condensed Matter and Materials Physics. My work focuses on understanding topological quantum phases in materials using Density Functional Theory (DFT) and Tight-Binding (TB) models. I study how materials with special quantum properties behave, aiming to uncover new insights into their fundamental nature.<br>
+
+I am also deeply interested in Quantum Computing and Quantum Machine Learning because of their potential in materials science. These tools can help us study and predict new materials and their properties in ways that go beyond classical methods. I am particularly focused on developing quantum algorithms that solve difficult problems more efficiently, using quantum computers to model complex quantum phenomena, and exploring quantum machine learning techniques that may outperform traditional approaches in analyzing and predicting complex data.</p>
+                            
+                            <div class="research-interests">
+                                <h3>Research Interests</h3>
+                                <ul>
+                                    <li>Computational Condensed Matter Physics</li>
+                                    <li>Computational Materials Science</li>
+                                    <li>Quantum Simulations</li>
+                                    <li>Quantum Algorithms</li>
+                                    <li>Quantum Machine Learning</li>
+                                    <li>Quantum Chemistry</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="quick-links">
+                                <a href="#publications" class="btn btn-primary">View Publications</a>
+                                <a href="assets/cv/cv.pdf" class="btn btn-outline" target="_blank">Download CV</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="section" data-bg="assets/images/bg-about.jpg">
+          <div class="container">
+            <h2 class="section-title">👨🏽‍💼 About Me</h2>
+
+            <div class="about-content">
+
+              <!-- Summary in a card, same visual weight as Education items -->
+              <div class="info-card">
+                <p>I am a computational condensed matter and materials physicist. I earned my PhD in Computational Condensed Matter and Materials Physics from the University of Cape Town. I also hold an MSc in Mathematical Sciences from AIMS-Cameroon, as well as a Research MSc and a BSc in Condensed Matter Physics from the University of Dschang.
+
+                <p>My work focuses on developing accurate and efficient models to explain how materials behave at the atomic scale. I use methods such as density functional theory, tight-binding, and Wannier-based analysis to study topological behavior, phase transitions, mechanical response, and energy transport. The goal is to turn fundamental insights into practical design rules for new materials in energy and electronics.</p>
+
+                <p>On this website you will find my publications, short tutorials, and other resources. I am always open to collaboration and to mentoring students who are interested in computational materials research.</p>
+              </div>
+
+              <!-- Education accordion -->
+              <div class="accordion" id="acc-education">
+                <button class="acc-header" aria-expanded="false">
+                  <span>Education</span>
+                  <i class="acc-chevron" aria-hidden="true"></i>
+                </button>
+                <div class="acc-panel">
+                  <ul class="card-list">
+                    <li class="card-item">
+                      <strong>Ph.D. Computational Condensed Matter and Materials Physics</strong>, University of Cape Town (2025)<br>
+                      <em>Dissertation: "Modelling of Berry phase and Fermi-level topologies for emergent quantum phenomena prediction in selected solid state systems"</em>
+                    </li>
+                    <li class="card-item">
+                      <strong>M.Sc. Mathematical Sciences</strong>, African Institute for Mathematical Sciences, AIMS-Cameroon (2015)
+                    </li>
+                    <li class="card-item">
+                      <strong>M.Sc. Condensed Matter Physics</strong>, University of Dschang (2015)
+                    </li>
+                    <li class="card-item">
+                      <strong>B.Sc. Condensed Matter Physics</strong>, University of Dschang (2012)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Experience accordion -->
+              <div class="accordion" id="acc-experience">
+                <button class="acc-header" aria-expanded="false">
+                  <span>Experience</span>
+                  <i class="acc-chevron" aria-hidden="true"></i>
+                </button>
+                <div class="acc-panel">
+                  <ul class="card-list">
+                    <li class="card-item">
+                      <strong>Doctoral Researcher</strong>, University of Cape Town, 2020 - 2025
+                      <br><em>Conducted advanced computational condensed matter research, focusing on topological phase transitions in quantum materials using first-principles and tight-binding approaches.</em>
+                    </li>
+                    <li class="card-item">
+                      <strong>Visiting Researcher</strong>, AIMS South Africa, Dec 2023 - Jan 2024
+                      <br><em>Developed DFT-TB workflows for Berry curvature engineering.</em>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Skills accordion -->
+              <div class="accordion" id="acc-skills">
+                <button class="acc-header" aria-expanded="false">
+                  <span>Skills</span>
+                  <i class="acc-chevron" aria-hidden="true"></i>
+                </button>
+                <div class="acc-panel">
+                  <ul class="card-list">
+                    <li class="card-item"><strong>Computational Methods</strong>: DFT, Tight-Binding (TB) modeling, Wannierization, Topological analysis</li>
+                    <li class="card-item"><strong>General Programming</strong>: Bash, Python, Google Apps Script, JavaScript</li>
+                    <li class="card-item"><strong>Topological & Quantum Computing</strong>: Quantum Algorithms, Quantum Optimization, Quantum Machine Learning</li>
+                    <li class="card-item"><strong>Quantum Computing Frameworks</strong>: Qiskit, PennyLane, Classiq, Cirq</li>
+                  </ul>
+                </div>
+              </div>
+
+            <!-- News accordion -->
+            <div class="accordion" id="acc-news">
+              <button class="acc-header" aria-expanded="false">
+                <span>News</span>
+                <i class="acc-chevron" aria-hidden="true"></i>
+              </button>
+              <div class="acc-panel">
+                <ul class="news-list">
+                  <li><strong>Upcoming:</strong> Updates coming soon.</li>
+                  <!-- Add more <li> items later as needed -->
+                </ul>
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="section" data-bg="assets/images/bg-publications.jpg">
+          <div class="container">
+            <h2 class="section-title">📄 Publications</h2>
+
+            <!-- Controls: All, Dates (dropdown), Conferences, Journals, Books -->
+            <div class="pub-controls" id="pubControls">
+              <button class="pub-tab active" data-view="all" id="pubTabAll">All</button>
+
+              <div class="pub-dates" id="pubDates">
+                <button class="pub-tab" id="pubTabDates" aria-haspopup="true" aria-expanded="false">Dates</button>
+                <div class="pub-dates-menu" id="pubDatesMenu">
+                  <!-- Years are injected by JS -->
+                </div>
+              </div>
+
+              <button class="pub-tab" data-view="conferences" id="pubTabConferences">Conferences</button>
+              <button class="pub-tab" data-view="journals" id="pubTabJournals">Journals</button>
+              <button class="pub-tab" data-view="books" id="pubTabBooks">Books</button>
+            </div>
+            
+            <div class="pub-content">
+
+            <!-- Intro line under the controls -->
+            <div class="info-card">
+            <p class="pub-intro">
+              Section under preparation.
+            </p>
+            </div>
+
+            <!-- Conference Papers subsection -->
+            <div class="accordion" id="acc-conf">
+              <button class="acc-header" aria-expanded="false">
+                <span>Conference Papers</span>
+                <i class="acc-chevron" aria-hidden="true"></i>
+              </button>
+              <div class="acc-panel">
+                <div class="info-card">
+                  <p class="pub-subintro">In progress...</p>
+                </div>
+                <div class="pub-list-wrap">
+                  <ul class="pub-list" id="confList"></ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Journal Articles subsection -->
+            <div class="accordion" id="acc-journals">
+              <button class="acc-header" aria-expanded="false">
+                <span>Journal Articles</span>
+                <i class="acc-chevron" aria-hidden="true"></i>
+              </button>
+              <div class="acc-panel">
+                <div class="info-card">
+                  <p class="pub-subintro">In progress...</p>
+                </div>
+                <div class="pub-list-wrap">
+                  <ul class="pub-list" id="journalList"></ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Books & Chapters subsection -->
+            <div class="accordion" id="acc-books">
+              <button class="acc-header" aria-expanded="false">
+                <span>Books &amp; Chapters</span>
+                <i class="acc-chevron" aria-hidden="true"></i>
+              </button>
+              <div class="acc-panel">
+                <div class="info-card">
+                  <p class="pub-subintro">In progress...</p>
+                </div>
+                <div class="pub-list-wrap">
+                  <ul class="pub-list" id="bookList"></ul>
+                </div>
+              </div>
+            </div>
+           </div>
+        </section>
+
+        <!-- Talks Section -->
+        <section id="talks" class="section" data-bg="assets/images/bg-talks.jpg">
+          <div class="container">
+            <h2 class="section-title">🎤 Talks & Presentations</h2>
+
+            <!-- Controls: All, Dates (dropdown) -->
+            <div class="talk-controls" id="talkControls">
+              <button class="talk-tab active" data-view="all" id="talkTabAll">All</button>
+
+              <div class="talk-dates" id="talkDates">
+                <button class="talk-tab" id="talkTabDates" aria-haspopup="true" aria-expanded="false">Dates</button>
+                <div class="talk-dates-menu" id="talkDatesMenu">
+                  <!-- Years are injected by JS -->
+                </div>
+              </div>
+            </div>
+
+            <div class="talk-content">
+
+              <!-- Intro line under the controls -->
+              <div class="info-card">
+                <p class="talk-intro">
+                  Section under preparation.
+                </p>
+              </div>
+
+              <!-- Talks & Presentations subsection -->
+              <div class="accordion" id="acc-talks">
+                <button class="acc-header" aria-expanded="false">
+                  <span>List of Talks &amp; Presentations</span>
+                  <i class="acc-chevron" aria-hidden="true"></i>
+                </button>
+                <div class="acc-panel">
+                  <div class="info-card">
+                    <p class="talk-subintro">Coming soon...</p>
+                  </div>
+                  <div class="talk-list-wrap">
+                    <ul class="talk-list" id="talksList"></ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Teaching Section -->
+        <section id="teaching" class="section" data-bg="assets/images/bg-teaching.jpg">
+          <div class="container">
+            <h2 class="section-title">🎓 Teaching</h2>
+
+            <!-- Controls: All, Dates (dropdown), Courses, Tutoring, Mentoring -->
+            <div class="teach-controls" id="teachControls">
+              <button class="teach-tab active" data-view="all" id="teachTabAll">All</button>
+
+              <div class="teach-dates" id="teachDates">
+                <button class="teach-tab" id="teachTabDates" aria-haspopup="true" aria-expanded="false">Dates</button>
+                <div class="teach-dates-menu" id="teachDatesMenu">
+                  <!-- Years are injected by JS -->
+                </div>
+              </div>
+
+              <button class="teach-tab" data-view="courses" id="teachTabCourses">Courses</button>
+              <button class="teach-tab" data-view="tutoring" id="teachTabTutoring">Tutoring</button>
+              <button class="teach-tab" data-view="mentoring" id="teachTabMentoring">Mentoring</button>
+            </div>
+
+            <div class="teach-content">
+
+              <!-- Intro line under the controls -->
+              <div class="info-card">
+                <p class="teach-intro">
+                  Teaching activities including university courses, tutoring, and student mentoring.
+                </p>
+              </div>
+
+              <!-- University Courses subsection -->
+              <div class="accordion" id="acc-courses">
+                <button class="acc-header" aria-expanded="false">
+                  <span>University Courses</span>
+                  <i class="acc-chevron" aria-hidden="true"></i>
+                </button>
+                <div class="acc-panel">
+                  <div class="info-card">
+                    <p class="teach-subintro">
+                      Undergraduate and graduate teaching.
+                    </p>
+                  </div>
+                  <div class="teach-list-wrap">
+                    <ul class="teach-list" id="coursesList"></ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tutoring subsection -->
+              <div class="accordion" id="acc-tutoring">
+                <button class="acc-header" aria-expanded="false">
+                  <span>Tutoring</span>
+                  <i class="acc-chevron" aria-hidden="true"></i>
+                </button>
+                <div class="acc-panel">
+                  <div class="info-card">
+                    <p class="teach-subintro">
+                      Individual and group academic tutoring.
+                    </p>
+                  </div>
+                  <div class="teach-list-wrap">
+                    <ul class="teach-list" id="tutoringList"></ul>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Student Mentoring subsection -->
+              <div class="accordion" id="acc-mentoring">
+                <button class="acc-header" aria-expanded="false">
+                  <span>Student Mentoring</span>
+                  <i class="acc-chevron" aria-hidden="true"></i>
+                </button>
+                <div class="acc-panel">
+                  <div class="info-card">
+                    <p class="teach-subintro">
+                      Student mentoring, research mentorship, and advising.
+                    </p>
+                  </div>
+                  <div class="teach-list-wrap">
+                    <ul class="teach-list" id="mentoringList"></ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Tutorials Section -->
+        <section id="tutorials" class="section" data-bg="assets/images/bg-tutorials.jpg">
+          <div class="container">
+            <h2 class="section-title">💻 Tutorials</h2>
+            <!-- Controls: All, Dates (dropdown) -->
+            <div class="tutorials-controls" id="tutorialsControls">
+              <button class="tutorials-tab active" data-view="all" id="tutorialsTabAll">All</button>
+              <div class="tutorials-dates" id="tutorialsDates">
+                <button class="tutorials-tab" id="tutorialsTabDates" aria-haspopup="true" aria-expanded="false">Dates</button>
+                <div class="tutorials-dates-menu" id="tutorialsDatesMenu">
+                  <!-- Years are injected by JS -->
+                </div>
+              </div>
+            </div>
+            <div class="tutorials-content">
+              <!-- Intro line under the controls -->
+              <div class="info-card">
+                <p class="tutorials-intro">
+                  Section under preparation.
+                </p>
+              </div>
+              <!-- List of Tutorials subsection -->
+              <div class="accordion" id="acc-tutorials">
+                <button class="acc-header" aria-expanded="false">
+                  <span>List of Tutorials</span>
+                  <i class="acc-chevron" aria-hidden="true"></i>
+                </button>
+                <div class="acc-panel">
+                  <div class="info-card">
+                    <p class="tutorials-subintro">In preparation...</p>
+                  </div>
+                  <div class="tutorials-list-wrap">
+                    <ul class="tutorials-list" id="tutorialsList"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section" data-bg="assets/images/bg-blog.jpg">
+          <div class="container">
+            <h2 class="section-title">✍🏽 Blog</h2>
+            <!-- Controls: All, Dates (dropdown) -->
+            <div class="blog-controls" id="blogControls">
+              <button class="blog-tab active" data-view="all" id="blogTabAll">All</button>
+              <div class="blog-dates" id="blogDates">
+                <button class="blog-tab" id="blogTabDates" aria-haspopup="true" aria-expanded="false">Dates</button>
+                <div class="blog-dates-menu" id="blogDatesMenu">
+                  <!-- Years are injected by JS -->
+                </div>
+              </div>
+            </div>
+            <div class="blog-content">
+              <!-- Intro line under the controls -->
+              <div class="info-card">
+                <p class="blog-intro">
+                  Section under preparation.
+                </p>
+              </div>
+              <!-- List of Blog Posts subsection -->
+              <div class="accordion" id="acc-blog">
+                <button class="acc-header" aria-expanded="false">
+                  <span>List of Blog Posts</span>
+                  <i class="acc-chevron" aria-hidden="true"></i>
+                </button>
+                <div class="acc-panel">
+                  <div class="info-card">
+                    <p class="blog-subintro">Coming soon...</p>
+                  </div>
+                  <div class="blog-list-wrap">
+                    <ul class="blog-list" id="blogList"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CV Section -->
+        <section id="cv" class="section" data-bg="assets/images/bg-cv.jpg">
+            <div class="container">
+                <h2 class="section-title">📝 Curriculum Vitae</h2>
+                <div class="cv-content">
+                <p>My CV below provides a comprehensive overview of my academic background, research experience, and key accomplishments. Please don't hesitate to get in touch if you'd like to know more.</p>
+                    <div class="cv-preview">
+                        <h3>Quick Overview</h3>
+                        <div class="cv-summary">
+                            <div class="cv-item">
+                                <h4>Current Position</h4>
+                                <p>Research Assistant, Computational Condensed Matter Physics<br></p>
+                            </div>
+                            <div class="cv-item">
+                                <h4>Previous Positions</h4>
+                                <p>Teaching Assistant (Tutor), AIMS Ghana (Mar - Jun 2025)</p>
+                            </div>
+<!--                            <div class="cv-item">-->
+<!--                                <h4>Selected Awards</h4>-->
+<!--                                <ul>-->
+<!--                                    <li>UCT Faculty of Science PhD fellowship (2017)</li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+                    <p>You can view or download my complete CV using the link below.</p>
+                    <div class="cv-download">
+                        <a href="assets/cv/cv.pdf" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-download"></i>
+                            Download CV (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Dr. Nguimeya Tematio Gaël-Pacôme All rights reserved.</p>
+                <div class="visitor-counter">
+                    <span>Visitors: <span id="visitorCount">0</span></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/counter.js"></script>
+    
+    <!-- Attribution: If you reuse or adapt this template, please credit
+    "Based on the personal website of Dr. Nguimeya Tematio Gaël-Pacôme" -->
+    
+</body>
+</html>

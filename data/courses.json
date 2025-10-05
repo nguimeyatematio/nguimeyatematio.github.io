@@ -1,0 +1,48 @@
+[
+  {
+    "id": "qm17",
+    "title": "Quantum Mechanics & Advanced Quantum Mechanics",
+    "institution": "Higher Teacher Training College (HTTC) Bambili, Cameroon",
+    "level": "Undergraduate & Graduate",
+    "year": "Feb - Mar 2017",
+    "role": "Teaching Assistant",
+    "description": "Teaching assistant for undergraduate Quantum Mechanics and graduate Advanced Quantum Mechanics."
+  },
+  {
+    "id": "qm16b",
+    "title": "Quantum Mechanics",
+    "institution": "University of Dschang, Cameroon",
+    "level": "Graduate",
+    "year": "May - June 2016",
+    "role": "Teaching Assistant",
+    "description": "Teaching assistant for a graduate course in Quantum Mechanics."
+  },
+  {
+    "id": "qm16a",
+    "title": "Quantum Mechanics",
+    "institution": "Higher Teacher Training College (HTTC) Bambili, Cameroon",
+    "level": "Graduate",
+    "year": "Feb - Mar 2016",
+    "role": "Teaching Assistant",
+    "description": "Teaching assistant for a graduate course in Quantum Mechanics."
+  },
+  {
+    "id": "egp15",
+    "title": "Electrostatics, Electromagnetism & General Physics",
+    "institution": "University of Dschang, Cameroon",
+    "level": "Undergraduate",
+    "year": "Nov 2015 - Jan 2016",
+    "role": "Teaching Assistant",
+    "description": "Teaching assistant for undergraduate courses in electrostatics, electromagnetism, and general physics."
+  },
+  {
+    "id": "iqp14",
+    "title": "Introduction to Quantum Physics",
+    "institution": "University of Dschang, Cameroon",
+    "level": "Undergraduate",
+    "year": "May - July 2014",
+    "role": "Teaching Assistant",
+    "description": "Teaching assistant for an undergraduate course in Introduction to Quantum Physics."
+  }
+]
+

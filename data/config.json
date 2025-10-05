@@ -1,0 +1,139 @@
+{
+  "_attribution": "If you reuse or adapt this template, please credit 'Based on the personal website of Dr. Nguimeya Tematio Gaël-Pacôme'",
+  "site": {
+    "title": "Dr. Nguimeya Tematio Gaël-Pacôme - Personal Website",
+    "description": "Personal website showcasing research, publications, and academic portfolio",
+    "author": "Dr. Nguimeya Tematio Gaël-Pacôme",
+    "url": "https://nguimeyatematio.github.io",
+    "email": "pacome.nguimeya@aims-cameroon.org",
+    "keywords": ["academic", "research", "publications", "computational physics", "quantum computing"]
+  },
+  "profile": {
+    "name": "Dr. Nguimeya Tematio Gaël-Pacôme",
+    "title": "PhD in Computational Condensed Matter and Materials Physics",
+    "affiliation": "University of Cape Town (UCT)",
+    "image": "assets/images/profile.jpg",
+    "bio": "I am a researcher in Computational Condensed Matter and Materials Physics. My work focuses on understanding topological quantum phases in materials using Density Functional Theory (DFT) and Tight-Binding (TB) models. I study how materials with special quantum properties behave, aiming to uncover new insights into their fundamental nature. I am also deeply interested in Quantum Computing and Quantum Machine Learning because of their potential in materials science. These tools can help us study and predict new materials and their properties in ways that go beyond classical methods. I am particularly focused on developing quantum algorithms that solve difficult problems more efficiently, using quantum computers to model complex quantum phenomena, and exploring quantum machine learning techniques that may outperform traditional approaches in analyzing and predicting complex data.",
+    "researchInterests": [
+      "Computational Condensed Matter Physics",
+      "Computational Materials Science",
+      "Quantum Simulations",
+      "Quantum Algorithms",
+      "Quantum Machine Learning",
+      "Quantum Chemistry"
+    ],
+    "cv": "assets/cv/cv.pdf"
+  },
+  "social": {
+    "email": "pacome.nguimeya@aims-cameroon.org",
+    "googleScholar": "https://scholar.google.com/citations?user=yourID",
+    "github": "https://github.com/pacomenguimeya",
+    "twitter": "https://twitter.com/pacomenguimeya",
+    "linkedin": "https://linkedin.com/in/pacomenguimeya",
+    "orcid": "https://orcid.org/0000-0000-0000-0000"
+  },
+  "navigation": [
+    { "id": "home", "label": "Home", "icon": "fas fa-home" },
+    { "id": "about", "label": "About", "icon": "fas fa-user" },
+    { "id": "publications", "label": "Publications", "icon": "fas fa-file-alt" },
+    { "id": "talks", "label": "Talks", "icon": "fas fa-presentation" },
+    { "id": "teaching", "label": "Teaching", "icon": "fas fa-chalkboard-teacher" },
+    { "id": "tutorials", "label": "Tutorials", "icon": "fas fa-book-open" },
+    { "id": "blog", "label": "Blog", "icon": "fas fa-blog" },
+    { "id": "cv", "label": "CV", "icon": "fas fa-file-pdf" }
+  ],
+  "theme": {
+    "default": "light",
+    "colors": {
+      "primary": "#2563eb",
+      "secondary": "#64748b",
+      "accent": "#059669"
+    },
+    "backgrounds": {
+      "home": "assets/images/bg-home.jpg",
+      "about": "assets/images/bg-about.jpg",
+      "publications": "assets/images/bg-publications.jpg",
+      "talks": "assets/images/bg-talks.jpg",
+      "teaching": "assets/images/bg-teaching.jpg",
+      "tutorials": "assets/images/bg-tutorials.jpg",
+      "blog": "assets/images/bg-blog.jpg",
+      "cv": "assets/images/bg-cv.jpg"
+    }
+  },
+  "features": {
+    "search": true,
+    "darkMode": true,
+    "analytics": true,
+    "animations": true,
+    "lazyLoading": true
+  },
+  "education": [
+    {
+      "degree": "PhD in Computational Condensed Matter and Materials Physics",
+      "institution": "University of Cape Town (UCT)",
+      "year": "2025",
+      "dissertation": "Modelling of Berry phase and Fermi-level topologies for emergent quantum phenomena prediction in selected solid state systems"
+    },
+    {
+      "degree": "M.Sc. Mathematical Sciences",
+      "institution": "African Institute for Mathematical Sciences, AIMS-Cameroon",
+      "year": "2015"
+    },
+    {
+      "degree": "M.Sc. Condensed Matter Physics",
+      "institution": "University of Dschang",
+      "year": "2015"
+    },
+    {
+      "degree": "B.Sc. Condensed Matter Physics",
+      "institution": "University of Dschang",
+      "year": "2012"
+    }
+  ],
+    "experience": [
+      {
+        "position": "Assistant Professor",
+        "institution": "University of Excellence",
+        "department": "Computer Science Department",
+        "startYear": "2021",
+        "endYear": "present"
+      },
+      {
+        "position": "Postdoctoral Researcher",
+        "institution": "Stanford University",
+        "startYear": "2020",
+        "endYear": "2021"
+      }
+    ],
+  "_comment": {
+    "awards": [
+      {
+        "title": "title",
+        "year": "yyyy"
+      },
+      {
+        "title": "title",
+        "year": "yyyy"
+      },
+      {
+        "title": "title",
+        "year": "yyyy"
+      }
+    ],
+    "news": [
+      {
+        "date": "yyyy-mm-dd",
+        "content": "content"
+      },
+      {
+        "date": "yyyy-mm-dd",
+        "content": "content"
+      },
+      {
+        "date": "yyyy-mm-dd",
+        "content": "content"
+      }
+    ]
+  }
+}
+

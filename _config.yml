@@ -1,0 +1,101 @@
+# _config.yml - GitHub Pages Configuration
+
+# Attribution: If you reuse or adapt this template, please credit
+# "Based on the personal website of Dr. Nguimeya Tematio Gaël-Pacôme"
+
+# Site settings
+title: "Dr. Nguimeya Tematio Gaël-Pacôme - Personal Website"
+description: "Academic personal website showcasing research, publications, and academic portfolio"
+baseurl: "" # the subpath of your site
+url: "https://nguimeyatematio.github.io"
+locale: en_US
+timezone: Africa/Johannesburg
+
+# Author information
+author:
+  name: "Dr. Nguimeya Tematio Gaël-Pacôme"
+  email: "pacome.nguimeya@aims-cameroon.org"
+  bio: "PhD in Computational Condensed Matter & Materials Physics (UCT)"
+  avatar: "/assets/images/profile.jpg"
+
+# SEO and social
+twitter:
+  username: pacomenguimeya
+  card: summary_large_image
+
+social:
+  name: "Dr. Nguimeya Tematio Gaël-Pacôme"
+  links:
+    - https://twitter.com/pacomenguimeya
+    - https://github.com/pacomenguimeya
+    - https://scholar.google.com/citations?user=yourID
+    - https://linkedin.com/in/pacomenguimeya
+
+# Open Graph default image (used by jekyll-seo-tag)
+logo: /assets/images/preview.jpg
+
+# GitHub Pages specific settings
+github:
+  repository_url: https://github.com/nguimeyatematio/nguimeyatematio.github.io
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+# Plugins (automatically enabled by GitHub Pages)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - node_modules/
+  - "*.sh"
+
+# Include files that start with underscores (if needed)
+include:
+  - _redirects
+
+# Collections (optional blog collection)
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Dr. Nguimeya Tematio Gaël-Pacôme"
+      image: /assets/images/preview.jpg
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      image: /assets/images/preview.jpg
+
+# Sass configuration
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# HTML compression
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  ignore:
+    envs: development
+

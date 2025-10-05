@@ -1,0 +1,363 @@
+/* css/themes.css */
+
+/* Attribution: If you reuse or adapt this template, please credit
+   "Based on the personal website of Dr. Nguimeya Tematio Gaël-Pacôme" */
+
+/* --------------------------- */
+/* Core transitions            */
+/* --------------------------- */
+
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navbar,
+.section::before,
+.publication-item,
+.course-card,
+.cv-preview {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Remove any translucent section overlays globally */
+.section::before {
+    content: none;
+}
+
+/* --------------------------- */
+/* Dark theme (black theme)    */
+/* --------------------------- */
+
+body.theme-dark {
+    --primary-color: #3b82f6;
+    --secondary-color: #94a3b8;
+    --accent-color: #10b981;
+    --text-primary: #f9fafb;
+    --text-secondary: #d1d5db;
+    --bg-primary: #111827;
+    --bg-secondary: #1f2937;
+    --border-color: #374151;
+    --shadow: 0 1px 3px 0 #000000;
+    --shadow-lg: 0 10px 15px -3px #000000, 0 4px 6px -2px #000000;
+}
+
+body.theme-dark .navbar {
+    background: #111827;
+    border-bottom: 1px solid var(--border-color);
+}
+
+body.theme-dark .publication-item,
+body.theme-dark .course-card,
+body.theme-dark .material-card,
+body.theme-dark .cv-preview,
+body.theme-dark .education-list li,
+body.theme-dark .news-list li {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+}
+
+body.theme-dark .search-container {
+    background: var(--bg-secondary);
+}
+
+body.theme-dark .search-input {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+/* --------------------------- */
+/* Section background engine   */
+/* --------------------------- */
+
+.section[data-bg] {
+    background-image: var(--section-bg);
+}
+
+/* --------------------------- */
+/* Home gradient variables     */
+/* used by section             */
+/* --------------------------- */
+
+#home {
+    --home-gradient: linear-gradient(
+        135deg, 
+        #3B0707 0%, 
+        #D70216 25%,
+        #FFC300 50%,
+        #C0392B 75%,
+        #3B0707 100%
+    );
+}
+
+body.theme-dark #home {
+  --home-gradient: linear-gradient(
+        135deg,
+        #000033 0%,
+        #009EFF 25%,
+        #003366 50%,
+        #0071E3 75%,
+        #000033 100%
+  );
+}
+
+/* --------------------------- */
+/* 8 high-saturation gradients */
+/* --------------------------- */
+
+/* 1. Cosmic Fusion - animated multi-color for #home */
+.section#home[data-bg] {
+    background: var(--home-gradient);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+/* 2. Crimson Rose - #about */
+.section#about[data-bg] {
+    background: linear-gradient(135deg, #871C2D 0%, #FF6B6B 50%, #FFE66D 100%);
+}
+
+/* 3. Arctic Ocean - #publications */
+.section#publications[data-bg] {
+    background: linear-gradient(135deg, #1C2D87 0%, #4A90E2 50%, #00C6FF 100%);
+}
+
+/* 4. Emerald Forest - #talks */
+.section#talks[data-bg] {
+    background: linear-gradient(135deg, #1E5631 0%, #A4DE02 50%, #76BA1B 100%);
+}
+
+/* 5. Royal Amethyst - #teaching */
+.section#teaching[data-bg] {
+    background: linear-gradient(135deg, #6A0DAD 0%, #8A2BE2 50%, #DA70D6 100%);
+}
+
+/* 6. Autumn Blaze - #tutorials */
+.section#tutorials[data-bg] {
+    background: linear-gradient(135deg, #FC6600 0%, #FF8C42 50%, #FFB366 100%);
+}
+
+/* 7. Midnight Steel - #blog */
+.section#blog[data-bg] {
+    background: linear-gradient(135deg, #2C3E50 0%, #34495E 50%, #7F8C8D 100%);
+}
+
+/* 8. Golden Horizon - #cv */
+.section#cv[data-bg] {
+    background: linear-gradient(135deg, #F9A602 0%, #FCD34D 50%, #FFBF00 100%);
+}
+
+/* Gradient animation keyframes for #home */
+@keyframes gradientAnimation {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* --------------------------- */
+/* Home light gray container   */
+/* --------------------------- */
+
+#home .container .home-content {
+    background: #e5e7eb;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 40px #000000;
+    position: relative;
+    z-index: 1; /* above bubbles */
+}
+
+@media (max-width: 768px) {
+    #home .container .home-content {
+        border-radius: 16px;
+        padding: 1.5rem;
+        box-shadow: 0 8px 32px #000000;
+    }
+}
+
+/* --------------------------- */
+/* Home floating bubbles       */
+/* --------------------------- */
+
+/* IMPORTANT: place the bubble divs INSIDE the #home .container,
+   before .home-content, so they position relative to the container. */
+#home .container {
+    position: relative; /* anchor for bubbles */
+    z-index: 0;
+}
+
+/* Base bubble: no fill so it shows the section gradient underneath.
+   White border and shadow make the circle visible. */
+#home .bubble {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+    background: none;             /* no fill, shows exact gradient below */
+    border: 0px solid #000000;    /* visible edge */
+    box-shadow: 0 12px 36px rgba(0,0,0,0.25);
+}
+
+/* Top-left bubble: half outside the gray card corner */
+#home .bubble.tr {    /* using .tr class, but top-left */
+    top: 30px;        /* adjust vertical distance from top of container */
+    left: 10px;       /* push it half outside on the left */
+    width: 220px;
+    height: 220px;
+    animation: bubbleFloatTL 10s ease-in-out infinite;
+}
+
+/* Bottom-right bubble: half outside the gray card corner */
+#home .bubble.bl {    /* using .bl class, but bottom-right */
+    bottom: 30px;     /* adjust vertical distance from bottom of container */
+    right: 20px;      /* push it half outside on the right */
+    width: 220px;
+    height: 220px;
+    animation: bubbleFloatBR 12s ease-in-out infinite;
+}
+
+/* Floating motion */
+@keyframes bubbleFloatTL {
+    0%   { transform: translate(0, 0) scale(1); }
+    50%  { transform: translate(6px, -22px) scale(1.03); }
+    100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes bubbleFloatBR {
+    0%   { transform: translate(0, 0) scale(1); }
+    50%  { transform: translate(8px, 24px) scale(1.03); }
+    100% { transform: translate(0, 0) scale(1); }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    #home .bubble { animation: none; }
+}
+
+/* --------------------------- */
+/* Override gradients in dark  */
+/* theme when toggled on       */
+/* --------------------------- */
+
+body.theme-dark .section#home[data-bg] {
+    background: var(--home-gradient);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+body.theme-dark .section#about[data-bg] {
+    background: linear-gradient(135deg, #be185d 0%, #831843 100%);
+}
+
+body.theme-dark .section#publications[data-bg] {
+    background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+}
+
+body.theme-dark .section#talks[data-bg] {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+body.theme-dark .section#teaching[data-bg] {
+    background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+}
+
+body.theme-dark .section#tutorials[data-bg] {
+    background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+}
+
+body.theme-dark .section#blog[data-bg] {
+    background: linear-gradient(135deg, #475569 0%, #334155 100%);
+}
+
+body.theme-dark .section#cv[data-bg] {
+    background: linear-gradient(135deg, #ca8a04 0%, #a16207 100%);
+}
+
+/* Home section style */
+
+/* Dark mode - Home card and text readability */
+body.theme-dark #home .container .home-content {
+    background: #9AA2A4; /* light dark gray */
+    color: #ffffff;
+}
+
+/* Keep the blue title in dark mode */
+body.theme-dark #home .home-content .title {
+    color: #3b82f6;
+}
+
+/* Ensure all body text in Home stays readable in dark mode */
+body.theme-dark #home .home-content p,
+body.theme-dark #home .home-content .affiliation,
+body.theme-dark #home .home-content .intro-text p {
+    color: #ffffff;
+}
+
+/* Dark mode - About card and text readability */
+body.theme-dark #About .container .home-content {
+    background: #9AA2A4; /* light dark gray */
+    color: #ffffff;
+}
+
+/* Dark mode - unify main container backgrounds (About -> CV) */
+body.theme-dark #about .container,
+body.theme-dark #publications .container,
+body.theme-dark #talks .container,
+body.theme-dark #teaching .container,
+body.theme-dark #tutorials .container,
+body.theme-dark #blog .container,
+body.theme-dark #cv .container {
+    background: #9AA2A4; /* same light dark gray as Home */
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 40px #000000;
+}
+
+/* Publications - header tint should match the section gradient (LIGHT MODE only) */
+body.theme-light #publications .acc-header {
+  background: linear-gradient(
+    90deg,
+    rgba(28,45,135,0.15) 0%,
+    rgba(255,255,255,0) 100%
+  );
+}
+
+/* Talks - header tint should match the section gradient (LIGHT MODE only) */
+body.theme-light #talks .acc-header {
+  background: linear-gradient(
+    90deg,
+    rgba(30,86,49,0.15) 0%,
+    rgba(164,222,2,0.10) 50%,
+    rgba(118,186,27,0) 100%
+  );
+}
+
+/* Tutorials - header tint should match the section gradient (LIGHT MODE only) */
+body.theme-light #tutorials .acc-header {
+  background: linear-gradient(
+    90deg,
+    rgba(252, 102, 0, 0.14) 0%,
+    rgba(255, 140, 66, 0.10) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+/* Teaching - header tint should match the section gradient (LIGHT MODE only) */
+body.theme-light #teaching .acc-header {
+  background: linear-gradient(
+    90deg,
+    rgba(106, 13, 173, 0.14) 0%,
+    rgba(138, 43, 226, 0.10) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+/* Blog - header tint should match the section gradient (LIGHT MODE only) */
+body.theme-light #blog .acc-header {
+  background: linear-gradient(
+    90deg,
+    rgba(44, 62, 80, 0.14) 0%,
+    rgba(52, 73, 94, 0.10) 50%,
+    rgba(127, 140, 141, 0.0) 100%
+  );
+}
+
