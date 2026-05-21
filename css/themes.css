@@ -110,34 +110,34 @@ body.theme-dark #home {
     animation: gradientAnimation 15s ease infinite;
 }
 
-/* 2. Crimson Rose - #about */
+/* 2. Golden Horizon - #about */
 .section#about[data-bg] {
-    background: linear-gradient(135deg, #871C2D 0%, #FF6B6B 50%, #FFE66D 100%);
+    background: linear-gradient(135deg, #F9A602 0%, #FCD34D 50%, #FFBF00 100%);
 }
 
-/* 3. Arctic Ocean - #publications */
+/* 3. Golden Horizon - #publications */
 .section#publications[data-bg] {
-    background: linear-gradient(135deg, #1C2D87 0%, #4A90E2 50%, #00C6FF 100%);
+    background: linear-gradient(135deg, #F9A602 0%, #FCD34D 50%, #FFBF00 100%);
 }
 
-/* 4. Emerald Forest - #talks */
+/* 4. Golden Horizon - #talks */
 .section#talks[data-bg] {
-    background: linear-gradient(135deg, #1E5631 0%, #A4DE02 50%, #76BA1B 100%);
+    background: linear-gradient(135deg, #F9A602 0%, #FCD34D 50%, #FFBF00 100%);
 }
 
-/* 5. Royal Amethyst - #teaching */
+/* 5. Golden Horizon - #teaching */
 .section#teaching[data-bg] {
-    background: linear-gradient(135deg, #6A0DAD 0%, #8A2BE2 50%, #DA70D6 100%);
+    background: linear-gradient(135deg, #F9A602 0%, #FCD34D 50%, #FFBF00 100%);
 }
 
-/* 6. Autumn Blaze - #tutorials */
+/* 6. Golden Horizon - #tutorials */
 .section#tutorials[data-bg] {
-    background: linear-gradient(135deg, #FC6600 0%, #FF8C42 50%, #FFB366 100%);
+    background: linear-gradient(135deg, #F9A602 0%, #FCD34D 50%, #FFBF00 100%);
 }
 
-/* 7. Midnight Steel - #blog */
+/* 7. Golden Horizon - #blog */
 .section#blog[data-bg] {
-    background: linear-gradient(135deg, #2C3E50 0%, #34495E 50%, #7F8C8D 100%);
+    background: linear-gradient(135deg, #F9A602 0%, #FCD34D 50%, #FFBF00 100%);
 }
 
 /* 8. Golden Horizon - #cv */
@@ -244,7 +244,7 @@ body.theme-dark .section#home[data-bg] {
 }
 
 body.theme-dark .section#about[data-bg] {
-    background: linear-gradient(135deg, #be185d 0%, #831843 100%);
+    background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
 }
 
 body.theme-dark .section#publications[data-bg] {
@@ -252,23 +252,23 @@ body.theme-dark .section#publications[data-bg] {
 }
 
 body.theme-dark .section#talks[data-bg] {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
 }
 
 body.theme-dark .section#teaching[data-bg] {
-    background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+    background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
 }
 
 body.theme-dark .section#tutorials[data-bg] {
-    background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+    background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
 }
 
 body.theme-dark .section#blog[data-bg] {
-    background: linear-gradient(135deg, #475569 0%, #334155 100%);
+    background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
 }
 
 body.theme-dark .section#cv[data-bg] {
-    background: linear-gradient(135deg, #ca8a04 0%, #a16207 100%);
+    background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
 }
 
 /* Home section style */
@@ -316,8 +316,8 @@ body.theme-dark #cv .container {
 body.theme-light #publications .acc-header {
   background: linear-gradient(
     90deg,
-    rgba(28,45,135,0.15) 0%,
-    rgba(255,255,255,0) 100%
+    rgba(192,57,43,0.15),
+    rgba(255,255,255,0)
   );
 }
 
@@ -325,9 +325,8 @@ body.theme-light #publications .acc-header {
 body.theme-light #talks .acc-header {
   background: linear-gradient(
     90deg,
-    rgba(30,86,49,0.15) 0%,
-    rgba(164,222,2,0.10) 50%,
-    rgba(118,186,27,0) 100%
+    rgba(192,57,43,0.15),
+    rgba(255,255,255,0)
   );
 }
 
@@ -335,9 +334,8 @@ body.theme-light #talks .acc-header {
 body.theme-light #tutorials .acc-header {
   background: linear-gradient(
     90deg,
-    rgba(252, 102, 0, 0.14) 0%,
-    rgba(255, 140, 66, 0.10) 50%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(192,57,43,0.15),
+    rgba(255,255,255,0)
   );
 }
 
@@ -345,9 +343,8 @@ body.theme-light #tutorials .acc-header {
 body.theme-light #teaching .acc-header {
   background: linear-gradient(
     90deg,
-    rgba(106, 13, 173, 0.14) 0%,
-    rgba(138, 43, 226, 0.10) 50%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(192,57,43,0.15),
+    rgba(255,255,255,0)
   );
 }
 
@@ -355,9 +352,8 @@ body.theme-light #teaching .acc-header {
 body.theme-light #blog .acc-header {
   background: linear-gradient(
     90deg,
-    rgba(44, 62, 80, 0.14) 0%,
-    rgba(52, 73, 94, 0.10) 50%,
-    rgba(127, 140, 141, 0.0) 100%
+    rgba(192,57,43,0.15),
+    rgba(255,255,255,0)
   );
 }
 
