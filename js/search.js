@@ -24,7 +24,7 @@ class SearchEngine {
 
         // Search bar placeholder
         if (searchInput) {
-            searchInput.placeholder = 'Search publications, talks and blog posts...';
+            searchInput.placeholder = 'Search publications...';
         }
 
         // Open search overlay
